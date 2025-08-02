@@ -87,6 +87,7 @@ const CompletedOrders = () => {
             <FlatList
                 data={orders}
                 renderItem={renderItemContainer}
+                scrollEnabled={false}
             />
         </View>
     )

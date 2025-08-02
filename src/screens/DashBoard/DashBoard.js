@@ -10,10 +10,12 @@ const DashBoard = () => {
   return (
     <SafeAreaView style={styles.mainView}>
     <ScrollView 
+      nestedScrollEnabled={true}
+
     style={styles.scrollView}
     contentContainerStyle={styles.contentContainer}>
         <StatusBar 
-        backgroundColor='#fffff'
+       
         barStyle={'light-content'}/>
       <View style={{
         flexDirection:'row',
@@ -33,7 +35,7 @@ const DashBoard = () => {
                     fontFamily:'roboto-bold',
                     fontSize:width*0.037,
                     fontWeight:'bold'
-                  }}>SCHEDULED TASK</Text>
+                  }}>SCHEDULER</Text>
               </View>
                <Image  source={require('../../assets/icons/bell.png')}
                style={styles.bellIcon}/>

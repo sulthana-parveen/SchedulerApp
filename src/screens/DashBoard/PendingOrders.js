@@ -85,6 +85,7 @@ const PendingOrders = () => {
             <FlatList
                 data={pendingOrders}
                 renderItem={renderItemContainer}
+                scrollEnabled={false}
             />
         </View>
     )

@@ -78,6 +78,7 @@ const renderItemContainer=({item}) => (
       <FlatList
       data={ongoingOrders}
       renderItem={renderItemContainer}
+      scrollEnabled={false}
       />
     </View>
   )
